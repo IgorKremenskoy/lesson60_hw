@@ -29,13 +29,9 @@ public class TarakanRace {
 
         for (Thread thread : threads) {
             thread.start();
-//            thread.join();
-
         }
         for (Thread thread : threads) {
-//            thread.run();
             thread.join();
-
         }
 
         System.out.println("Tarakans Race FINISH!");
